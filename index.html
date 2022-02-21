@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Sale Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="JSfunctions.js"></script>
+	<script>
+	    if ( window.history.replaceState ) {
+	        window.history.replaceState( null, null, window.location.href );
+	    }
+	</script>
+</head>
+<body style="font-family: arial;">
+	<div style="margin-left:4%;margin-top:6%; border-style: solid;border-radius: 10px; width: 800px; min-height: 500px;background-color: #f2f2f2;">
+		<div style="margin-left:10px;margin-top:15px;float:left;height: 470px;width: 450px;">
+			<div>
+				<button class="greenButton" onclick="productButton('Banada','Food',1,0)">
+					<center class="productName">Banana</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+				<button class="orangeButton" style="margin-left:10px;" onclick="productButton('Chair','Furniture',10,1)">
+					<center class="productName">Chair</center>
+					<center class="productGroup">Furniture</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+				<button class="greenButton" style="margin-left:10px;" onclick="productButton('Vitamin A','Supplement',7,1)">
+					<center class="productName">Vitamin A</center>
+					<center class="productGroup">Supplement</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+			</div>
+			<div style="margin-top:10px;">
+				<button class="orangeButton" onclick="productButton('Apple','Food',1.2,0)">
+					<center class="productName">Apple</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+				<button class="greenButton" style="margin-left:10px;" onclick="productButton('Table','Furniture',15,1)">
+					<center class="productName">Table</center>
+					<center class="productGroup">Furniture</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+				<button class="orangeButton" style="margin-left:10px;" onclick="productButton('Vitamin C','Supplement',5,1)">
+					<center class="productName">Vitamin C</center>
+					<center class="productGroup">Supplement</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+			</div>
+			<div style="margin-top:10px;">
+				<button class="greenButton" onclick="productButton('Orange','Food',0.8,0)">
+					<center class="productName">Orange</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+				<button class="orangeButton" style="margin-left:10px;" onclick="productButton('Sofa','Furniture',30,1)">
+					<center class="productName">Sofa</center>
+					<center class="productGroup">Furniture</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+				<button class="greenButton" style="margin-left:10px;" onclick="productButton('Omega 3','Supplement',9,1)">
+					<center class="productName">Omega 3</center>
+					<center class="productGroup">Supplement</center>
+					<center class="productTaxOption">Tax Applies</center>
+				</button>
+			</div>
+			<div style="margin-top:10px;">
+				<button class="orangeButton" onclick="productButton('Bread','Food',1,0)">
+					<center class="productName">Bread</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+				<button class="greenButton" style="margin-left:10px;" onclick="productButton('Pear','Food',1.2,0)">
+					<center class="productName">Pear</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+				<button class="orangeButton" style="margin-left:10px;" onclick="productButton('Milk','Food',1,0)">
+					<center class="productName">Milk</center>
+					<center class="productGroup">Food</center>
+					<center class="productTaxOption">No Tax</center>
+				</button>
+			</div>
+		</div>
+
+		<div style="margin-top:15px;margin-right:20px; float:right; height:  470px; width: 300px;">
+			<div style="border-style: solid; border-radius: 10px; width:300px;height:300px;background-color: white;">
+				<center style="margin-top:5px;">Transaction:</center>
+				<center id="transaction" style="overflow: auto; max-height: 270px;"></center>
+			</div>
+			<div style="margin-left:100px;margin-top:15px;line-height: 140%;">
+				<div id="subtotal">Subtotal:</div>
+				<div id="tax" style="margin-left:33px;">Tax:</div>
+				<div id="total" style="margin-left:25px;">Total:</div>
+			</div>
+			<div style="margin-top:15px;">
+				<button class="functionButton" style="background-color: #f53636;" onclick="cancelAll()">Void</button>
+				<button class="functionButton" style="margin-left:15px;background-color: #f4f72a;" onclick="printResult()">Save</button>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

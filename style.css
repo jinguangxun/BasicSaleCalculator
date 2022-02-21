@@ -1,0 +1,32 @@
+.greenButton {
+	background-color: #35f268;
+	height: 110px;
+	width: 140px;
+	border-radius: 10px;
+}
+
+.orangeButton {
+	background-color: #ff9e54;
+	height: 110px;
+	width: 140px;
+	border-radius: 10px;
+}
+
+.productName {
+	font-size: 25px;
+}
+
+.productGroup {
+	font-size: 10px;
+}
+
+.productTaxOption{
+	font-size: 10px;
+}
+
+.functionButton {
+	width:140px;
+	height:70px;
+	font-size: 25px;
+	border-radius: 10px;
+}
